@@ -1,0 +1,12 @@
+--- #this learing playbook
+  - hosts: local
+    remote_user : ansible
+    become : yes
+    become_method : sudo
+    connection : ssh
+    gather_facts : yes
+    tasks :
+     - name : installating telnet on both nodes
+       yum :
+           name : telnet
+           state : latest
