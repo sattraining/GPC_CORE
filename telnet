@@ -1,4 +1,4 @@
---- #this learing playbook
+---
   - hosts: local
     remote_user : ansible
     become : yes
